@@ -1,0 +1,86 @@
+input {
+    margin: 5px;
+    margin-left: 0px;
+  }
+  
+  td {
+    width: 28px;
+    height: 28px;
+    border: 1px solid grey;
+    padding: 0px;
+    text-align: center;
+    cursor: default;
+  }
+  
+  table {
+    border: 3px solid grey;
+    border-collapse: collapse;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+  
+  button {
+    margin: 5px;
+    margin-left: 0px;
+  }
+  
+  table.recolored {
+    background-color: lightgrey;
+  }
+  
+  table.recolored td.selected {
+    background-color: white;
+  }
+  
+  td.numbered {
+    font-size: 0px;
+  }
+  
+  td.minen {
+    font-size: 0px;
+  }
+  
+  td.selected {
+    background-color: lightgrey;
+    font-size: 15px;
+  }
+  
+  td.selected.numbered {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  [data-mines="1"] {
+    color: #4169E1;
+  }
+  
+  [data-mines="2"] {
+    color: #2E8B57;
+  }
+  
+  [data-mines="3"] {
+    color: #B22222;
+  }
+  
+  [data-mines="4"] {
+    color: #008B8B;
+  }
+  
+  [data-mines="5"] {
+    color: #FF1493;
+  }
+  
+  .numbered.mines6 {
+    color: #191970;
+  }
+  
+  td.flagged {
+    font-size: 15px;
+    color: red !important;
+  }
+  
+  .minen.flagged.selected {
+    font-size: 15px;
+  }

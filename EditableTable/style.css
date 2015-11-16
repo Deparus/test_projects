@@ -1,0 +1,40 @@
+
+
+table {
+    border: 1px solid grey;
+    border-spacing: 1px;
+}
+
+table.editableTable td {
+    width: 150px;
+    height: 30px;
+    border: 1px solid grey;
+    vertical-align: middle;
+    text-align: left;
+    padding: 3px;
+    overflow: auto;
+}
+
+table.editableTable td.selected {
+  border-color: red;
+  padding: 3px;
+}
+
+.editableCell {
+  width: inherit;
+  height: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+.editableTable,
+.editableCell{
+  vertical-align: inherit;
+  text-align: inherit;
+  font: 12px serif;
+}

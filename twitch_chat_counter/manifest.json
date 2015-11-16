@@ -1,0 +1,20 @@
+{
+  "name": "Twitch chat jerks detection",
+  "version": "1.0",
+  "permissions": [
+    "activeTab", "http://www.twitch.tv/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon_128.png",
+    "default_popup": "popup.html"
+  },
+  "icons": { "128": "icon_128.png" },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [ "http://www.twitch.tv/*" ],
+      "js": [ "jquery.min.js", "main.js" ],
+	  "run_at": "document_end"
+    }
+  ]  
+}

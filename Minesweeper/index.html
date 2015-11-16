@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div>
+  <input id='width' placeholder='width'>
+  <input id='height' placeholder='height'>
+  <button id='drawCustomField'>DrawTable</button>
+</div>
+<div>
+  <button>10x10</button>
+  <button>15x15</button>
+  <button>20x20</button>
+</div>
+<div id='table-container'></div>
+<div>
+  <button onclick="recolorTable()" disabled>Recolor</button>
+  <button onclick="resetTable()" disabled>Reset</button>
+  <span>Всего мин: <span id="totalmines"></span></span>
+</div>
+  </body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="listcont">
+      <form id="addcity" class="form-inline">
+        <div class="form-group">
+          <label for="city">City: </label>
+          <input id="city" class="form-control" type="text" />
+          <input type="submit" value="Add City" class="btn btn-primary" />
+        </div>
+      </form>
+
+
+      <div>
+        <ul id="citylist">
+
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div id="googleMap"></div>
+  </div>
+</body>
+
+</html>
